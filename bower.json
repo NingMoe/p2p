@@ -1,0 +1,17 @@
+{
+  "name": "p2pCode",
+  "authors": [
+    "测试人员 <test@qq.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://www.520it.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

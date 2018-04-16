@@ -1,0 +1,1 @@
+{"version":3,"sources":["public.less"],"names":[],"mappings":"AAEA;EACE,sBAAA;EACA,eAAA","sourcesContent":["@color:blue;\r\n@size:12px;\r\nbody{\r\n  background-color: @color;\r\n  font-size: @size;\r\n}"],"file":"../public.css"}
