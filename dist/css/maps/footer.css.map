@@ -1,0 +1,1 @@
+{"version":3,"sources":["footer.less"],"names":[],"mappings":"AAEA;EACC,yBAAA;EACA,iBAAA;EACA,gBAAA","sourcesContent":["@import url(\"global.less\");\r\n//页脚\r\nfooter{\r\n\tbackground-color: @color_lightGray;\r\n\tpadding: 32px 0px;\r\n\tmargin-top: 20px;\r\n}"],"file":"../footer.css"}

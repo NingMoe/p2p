@@ -1,4 +1,3 @@
-
 //引入gulp模块
 var gulp = require('gulp');
 
@@ -25,6 +24,8 @@ var cleanCss = require('gulp-clean-css');
 
 //引入删除模块
 var del=require("del");
+
+//------------------------开发阶段-------------------------------------------
 
 //配置less任务
 gulp.task("lessTask",function(){
@@ -56,6 +57,8 @@ gulp.task("watch",function () {
     gulp.watch("./src/**/*",["lessTask","sassTask"]); //观察者，less+sass变化就执行编译
 });
 
+//------------------------发布阶段-------------------------------------------
+
 //定义压缩css任务
 gulp.task("cssClean",function () {
     // * 匹配任意数量的字符
@@ -74,7 +77,7 @@ gulp.task("delTempTask",function () {
     });
 });
 
-//串行发布任务
+//串行任务： 网站发布时调用，在网站要上线的时候执行 gulp publishTask
 gulp.task("publishTask",function () {
     sequence("cssClean","delTempTask");
 });

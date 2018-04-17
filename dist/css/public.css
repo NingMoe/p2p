@@ -1,6 +1,7 @@
-body {
-  background-color: blue;
-  font-size: 12px;
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
 /*# sourceMappingURL=maps/public.css.map */

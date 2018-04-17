@@ -1,0 +1,20 @@
+公共样式抽取的原则： 把公用部分抽取成一个独立的css文件
+
+公共部分：
+public.less
+reset.less 此项目不需要，因为使用的是bootstrap框架
+header.less
+footer.less
+
+功能页面：
+index.less
+register.less
+login.less
+personal.less
+invest.less
+borrow.less
+......
+
+
+在功能页面引入公共样式
+@import url("*.less");

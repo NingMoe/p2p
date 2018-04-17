@@ -1,0 +1,13 @@
+1. 拷贝属性
+< data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+2. 调用方法显示
+ $('选择器').tooltip();
+ 
+3. 支持html
+data-html="true"
+
+4. 定义工具提示的样式
+.tooltip img{
+   width: 120px;
+}

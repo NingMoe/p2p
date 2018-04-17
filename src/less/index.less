@@ -1,33 +1,91 @@
-@color_fff: #fff;
-@color_blue: #3aabf7;
-@color_bluedark: #2e8ece;
+//引入公共部分
+@import url("public.less");
+@import url("header.less");
 
-.navbar-inverse .navbar-brand{
-	color: @color_fff;
-	font-size: 26px;
-	padding: 10px 15px;
+//banner轮播图
+@media all and(max-width: 420px){
+	.carousel-inner>.item>img{
+		height: 140px;
+	}
 }
 
-.navbar-inverse .navbar-nav>li>a{
-	color: @color_fff;
+//三大特色的标题
+.feature{
+	background: url(../../images/feature01.png) no-repeat 0px 10px;
+	padding-left: 80px;
+	margin-top: 15px;
+	
+	h4{
+		font-weight: bold;
+	}
+	
+	p{
+		color: @color_gray;
+	}
 }
 
-.navbar-inverse .navbar-nav>li>a:hover{
-	color: @color_blue;
-	text-decoration: underline;
+.feature:nth-of-type(2){
+	background-image: url(../../images/feature02.png);
 }
 
-.navbar:nth-of-type(1){
+.feature:nth-of-type(3){
+	background-image: url(../../images/feature03.png);
+}
+
+//借款列表和资讯的公共标题
+.panel{
+	border: none;
 	border-radius: 0px;
-	margin-bottom: 0px;
+	box-shadow: none;
+	
+	&>.panel-heading{
+		background-color: transparent;
+		padding: 20px 0px 0px 0px;
+		margin-bottom: 15px;
+				
+		.pull-left{
+			h3{
+				font-weight: bold;
+				color: @color_bluedark;
+				border-bottom: solid 3px @color_bluedark;
+				margin: 0px;
+				padding-bottom: 10px;
+			}
+		}
+		
+		.pull-right{
+			position: relative;
+			top: 10px;
+		}
+	}
+	
+	&>.panel-body{
+		padding: 10px 0px;
+		
+		ul{
+			li{
+				line-height: 32px;
+				border-bottom: dotted 1px @color_gray;
+				
+				span{
+					float: right;
+					color: @color_gray;
+				}
+			}
+		}
+	}
 }
 
-.navbar-default .navbar-nav>li>a{
-	line-height: 46px;
-	font-size: 16px;
+//借款的内容里的标题在小屏方式小隐藏
+@media all and(max-width: 420px){
+	.borrowTitle,.borrowType{
+		display: none;
+	}
+	
+	.navbar-default .navbar-nav>li>a{
+		line-height: 30px;
+	}
 }
 
-.navbar-default .navbar-nav>li>a:hover{
-	color: @color_bluedark;
-	background-color: #f0f0f0;
-}
+//页脚
+@import url("footer.less");
