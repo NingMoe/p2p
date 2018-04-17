@@ -1,0 +1,39 @@
+1. 项目技术选型
+前端
+Html5/css3/
+less/sass/
+jquery/javascript/ajax/
+bootstrap/
+gulp/bower/npm
+
+后端
+nodejs/mongodb
+
+2. 环境搭建bower
+2-1. bower.json配置文件
+bower init
+
+2-2. 配置库文件的路径
+.bowerrc
+
+2-3. bootstrap安装
+bower i bootstrap#3.3.7 -o
+由于bootstrap是依赖jquery，所以会自动安装jquery
+
+3. 环境搭建gulp
+3-1. 配置package.json
+npm init -y
+
+3-2. 安装依赖包
+npm i
+
+3-3. 配置gulpfile.js文件
+less+sass编译
+文件观察者和热刷新
+css压缩+重命名+垃圾文件清理
+
+4. gitHub仓库的管理
+https://github.com/flashren/p2p
+
+
+

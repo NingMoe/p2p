@@ -1,0 +1,10 @@
+SVN
+http://xmg-PC:81/svn/p2p/
+zhangsan
+111
+
+
+GIT
+https://github.com/flashren/p2p.git
+账号
+密码
